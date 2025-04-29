@@ -1,38 +1,63 @@
-.pagquiz{
-    background-color: rgb(24, 24, 71);
-
-}
-form{
-    width: 40%;
-    height: auto;
-    margin: 10px;
-    margin-left: 30%;
-    margin-top: 20px;
-    margin-bottom: 35x;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
+body.pagquiz {
+    background-color: #f4f8fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: aliceblue;
 }
 
-.alternativasABC{
- margin-left: -49%;
-}
-.alternativasDE{
-    margin-left: -30%;
-   }
-#a{
-    margin-right: 10%;
-}
-#E{
-    margin-right: -1%;
+#quiz {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
 }
 
-.timer{
-    margin-right: 80%;
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 3px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
 }
