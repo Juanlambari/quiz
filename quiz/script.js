@@ -1,30 +1,4 @@
 
-document.querySelector('.custom-btn').addEventListener('click', () => {
-
-let duration = 60
-
-display = document.getElementById('timer');
-timer(duration, display);
-})
-
-const timer = (duration, display) => {
-    let timer = duration;
-    setInterval(() =>{
-        seconds = timer;
-        display.innerHTML = `${timer}`
-        timer = timer < 10 ? '0' + timer : timer;
-
-        timer -= 1;
-        if(timer < 0){
-            display.innerHTML = 'ACABOU!!!';
-            setTimeout(function(){
-                window.location.reload(true);
-            }, 1000);
-            
-        }
-
-    }, 1000)
-}
 
 const questions = [
     {
@@ -83,6 +57,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Próxima";
     showQuestion();
+    document.querySelector('.custom-btn').style.display = "none"
 }
 
 function resetState() {
@@ -113,7 +88,7 @@ function selectAnswer(e) {
     const correctAnswer = answers.filter((answer) => answer.correct == true)
 
     const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.id == correctAnswer.id;
+    const isCorrect = Number(selectedBtn.dataset.id) == correctAnswer[0].id;
     if(isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
@@ -129,7 +104,7 @@ function selectAnswer(e) {
     function  showScore() {
         resetState();
         questionElement.innerHTML = `Você acertou ${score} de ${questions.length}!`;
-        nextButton.innerHTML = "Play Again";
+        nextButton.innerHTML = "Jogar Denovo";
         nextButton.style.display = "block";
     }
 
@@ -150,8 +125,6 @@ nextButton.addEventListener("click", () => {
     }
 })
 
-/*comecarButton.addEventListener("click", () => {
-    
-})*/
+
 
 startQuiz();
