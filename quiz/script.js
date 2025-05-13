@@ -42,11 +42,21 @@ const questions = [
             { id: 5, text: "E)-  1 de 2 quartos, 1 de 3 quartos sem varanda e 1 de 3 quartos com varanda.", correct: false},
         ],
     },
+    {
+        question: "Um instituto de pesquisa constatou que, nos últimos dez anos, o crescimento populacional de uma cidade foi de 135,25%. Qual é a representação decimal da taxa percentual desse crescimento populacional?",
+        answers: [
+            { id: 1, text: "A)- 13525,0", correct: false },
+            { id: 2, text: "B)- 135,25",  correct: false},
+            { id: 3, text: "C)- 13,525",  correct: false},
+            { id: 4, text: "D)- 1,3525",  correct: true},
+            { id: 5, text: "E)- 0,13525", correct: false},
+        ],
+    },
 ]
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
-const comecarButton = document.getElementById("custom-btn");
+const resolucoesButton = document.getElementById("custom-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex= 0;
@@ -62,6 +72,7 @@ function startQuiz() {
 
 function resetState() {
     nextButton.style.display = "none";
+    resolucoesButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -105,6 +116,9 @@ function selectAnswer(e) {
         resetState();
         questionElement.innerHTML = `Você acertou ${score} de ${questions.length}!`;
         nextButton.innerHTML = "Jogar Denovo";
+        resolucoesButton.innerHTML = "Resoluções";
+        
+        resolucoesButton.style.display = "block";
         nextButton.style.display = "block";
     }
 
