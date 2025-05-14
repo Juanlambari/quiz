@@ -2,44 +2,42 @@
 
 const questions = [
     {
-        question: "O limite recomendável de carga a ser transportada por um caminhão é 10000 kg. Ao transportar uma carga que excede em 300 kg esse limite, o consumo de combustível é 2% maior que o consumo observado ao transportar 10000 kg. Em uma rodovia, o consumo de combustível desse caminhão é proporcional à quilometragem percorrida, quando considerada uma mesma carga transportada. Sabe-se que, transportando 10000 kg por 90 km nessa rodovia, esse caminhão consome 60 litros de combustível. Suponha que esse caminhão irá transportar uma carga de 10300 kg por 75 km nessa rodovia. Quantos litros de combustível esse caminhão consumirá para efetuar esse transporte? ",
+        question: "Júlia acertou 75% das questões de Matemática do teste e Mariana acertou 4/5. Quem acertou mais questões? ",
         answers: [
-            { id: 1, text: "A)- 49,0", correct: true },
-            { id: 2, text: "B)- 50,0", correct: false},
-            { id: 3, text: "C)-  51,0", correct: false},
-            { id: 4, text: "D)- 58,8", correct: false},
-            { id: 5, text: "E)-  61,2", correct: false},
+            { id: 1, text: "A)- Júlia", correct: false },
+            { id: 2, text: "B)- Mariana", correct: true},
+            { id: 3, text: "C)- As duas acertaram o mesmo número de questões.", correct: false},
         ],
     },
     
     {
-        question: "Três amigos foram a um restaurante que vende diferentes opções de pratos, cada um deles comercializados a um mesmo valor fixo, em real. Eles consumiram, juntos, R$ 16,50 em sucos e cada um pediu exatamente um desses pratos, sendo esses os únicos gastos efetuados no restaurante. O valor total da conta foi de R$ 82,50, incluída nesse valor uma taxa de serviço de 10%, calculada sobre todos os gastos efetuados. Qual é o preço cobrado, em real, de cada prato comercializado nesse restaurante? ",
+        question: "Na promoção de uma loja de eletrodomésticos, um aparelho de som que custava R$ 400,00 teve um desconto de 12%. Quanto o cliente que decidir comprar o equipamento pagará?",
         answers: [
-            { id: 1, text: "A)- 19,25", correct: false },
-            { id: 2, text: "B)- 19,50", correct: false},
-            { id: 3, text: "C)- 19,80", correct: false},
-            { id: 4, text: "D)- 20,00", correct: false},
-            { id: 5, text: "E)- 24,20 ", correct: true},
+            { id: 1, text: "A)- R$ 372,00", correct: false },
+            { id: 2, text: "B)- R$ 342,00", correct: false},
+            { id: 3, text: "C)- R$ 362,00", correct: false},
+            { id: 4, text: "D)- R$ 352,00", correct: true},
+            
         ],
     },
     {
-        question: "Uma piscina tem capacidade de 2 500 000 litros. Seu sistema de abastecimento foi regulado para ter uma vazão constante de 6 000 litros de água por minuto. O mesmo sistema foi instalado em uma segunda piscina, com capacidade de 2750000 litros, e regulado para ter uma vazão, também constante, capaz de enchê-la em um tempo 20% maior que o gasto para encher a primeira piscina. A vazão do sistema de abastecimento da segunda piscina, em litro por minuto, é: ",
+        question: "Em um concurso, 520 candidatos se inscreveram. No dia da prova apenas 364 candidatos compareceram. Neste caso, qual foi a porcentagem dos candidatos que faltaram a prova?",
         answers: [
-            { id: 1, text: "8250.", correct: false },
-            { id: 2, text: "7920.", correct: false},
-            { id: 3, text: "6545.", correct: true},
-            { id: 4, text: "5500.", correct: false},
-            { id: 5, text: "5280.", correct: false},
+            { id: 1, text: "A)- 10%", correct: false },
+            { id: 2, text: "B)- 20%", correct: false},
+            { id: 3, text: "C)- 30%", correct: true},
+            { id: 4, text: "D)- 40%", correct: false},
+            
         ],
     },
     {
-        question: "Uma incorporadora põe à venda diversos apartamentos de 2 e de 3 quartos. Os de 2 quartos têm varanda e custam R$ 220 000,00. Alguns apartamentos de 3 quartos não têm varanda e custam R$ 300 000,00. Se tiverem varanda, o preço será 15% maior. A previsão do mercado é de que imóveis de 2 quartos possam ser revendidos daqui a 12 meses por 5% a mais que o preço pelo qual foram comprados, enquanto apartamentos de 3 quartos poderão ser revendidos daqui a 12 meses por 4% a mais do que o valor pago, independentemente de terem varanda. Uma agência imobiliária tem R$ 1000 000,00 para investir e decidiu comprar alguns desses apartamentos. A intenção é revendê-los daqui a 12 meses com o maior lucro possível. As possibilidades de compra foram analisadas e, levando em conta o valor a investir e a previsão do mercado, uma decisão sobre a compra foi tomada. A decisão quanto à quantidade e ao tipo de apartamentos a comprar foi de ",
+        question: "Em uma indústria, o setor de qualidade constatou que um lote com 4500 peças, 180 apresentavam algum defeito. Para um lote ser aprovado é necessário que o número de peças com defeito seja inferior a 3%. Neste caso, o lote foi aprovado ou reprovado?",
         answers: [
-            { id: 1, text: "A)- 4 de 2 quartos.", correct: false },
-            { id: 2, text: "B)- 3 de 3 quartos sem varanda.", correct: false},
-            { id: 3, text: "C)-  3 de 3 quartos com varanda.", correct: false},
-            { id: 4, text: "D)- 3 de 2 quartos e 1 de 3 quartos sem varanda.", correct: true},
-            { id: 5, text: "E)-  1 de 2 quartos, 1 de 3 quartos sem varanda e 1 de 3 quartos com varanda.", correct: false},
+            { id: 1, text: "A)- Aprovado com 1% de peças com defeito.", correct: false },
+            { id: 2, text: "B)- Aprovado com 2% de peças com defeito.", correct: false},
+            { id: 3, text: "C)-  Reprovado com 3% de peças com defeito.", correct: false},
+            { id: 4, text: "D)- Reprovado com 4% de peças com defeito.", correct: true},
+    
         ],
     },
     {
@@ -142,3 +140,4 @@ nextButton.addEventListener("click", () => {
 
 
 startQuiz();
+// https://www.todamateria.com.br/exercicios-de-porcentagem/
