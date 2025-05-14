@@ -14,6 +14,13 @@ body{
     margin: 100px auto 0;
     padding: 30px;
 }
+.resolucoes{
+    color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px;
+    padding: 20px;
+}
 
 .app h2{
     font-weight: 25px;
@@ -23,6 +30,15 @@ body{
     padding-bottom: 30px;
     text-align: center;
 }
+.container{
+    color: aliceblue;
+    width: 90%;
+    margin: 3%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 25px;
+    font-weight: 600; 
+}
 .quiz {
     padding: 20px;
 }
@@ -31,6 +47,78 @@ body{
     color: #001e4d;
     font-weight: 600;
 }
+#img1{
+    width: 500px;
+    height: 480px;
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    justify-self: center;
+}
+#img2{
+     width: 600px;
+    height: 480px;
+    padding: 35px;
+    margin: 30px;
+    text-align: center;
+    justify-self: center;
+    display: none;
+}
+#img3{
+     width: 600px;
+    height: 480px;
+    padding: 35px;
+    margin: 30px;
+    text-align: center;
+    justify-self: center;
+     display: none;
+}
+#img4{
+     width: 600px;
+    height: 480px;
+    padding: 35px;
+    margin: 30px;
+    text-align: center;
+    justify-self: center;
+    display: none;
+}
+.manual-navigation {
+    position: absolute;
+    width: 97%; 
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+    color: #fff;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
 
 .custom-btn {
     background: #001e4d;
@@ -113,4 +201,67 @@ body{
 
 .incorrect{
     background: #ff9393;
+}
+
+.manual-btn:link,
+.manual-btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.manual-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.manual-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.manual-btn {
+    background-color: #fff;
+    color: #000000;
+}
+
+.manual-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+
+.manual-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.manual-btn {
+    animation: moveInBottom 4s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

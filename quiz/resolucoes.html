@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Resoluções</title>
 </head>
 <body>
-    <div class="app">
-        <h1>Resoluções Quiz</h1>
-        <div class="quiz"></div>
-    </div>
+        <div class="container">
+        <h1>Resoluções Questões do Quiz</h1>
+        </div>
+            <input type="radio" name="radio-btn" id="radio1" onchange="showImage('img1')" style="display: none;">
+            <input type="radio" name="radio-btn" id="radio2" onchange="showImage('img2')" style="display: none;">
+            <input type="radio" name="radio-btn" id="radio3" onchange="showImage('img3')" style="display: none;">
+            <input type="radio" name="radio-btn" id="radio4" onchange="showImage('img4')" style="display: none;">
+            <div class="imagens">
+                <img id="img1" src="imagens/1.png" style="display: none;">
+                <img id="img2" src="imagens/2.png" style="display: none;">
+                <img id="img3" src="imagens/3.png" style="display: none;">
+                <img id="img4" src="imagens/4.png" style="display: none;">
+                </div>
+            <div class="manual-navigation">
+
+            <label for="radio1" class="manual-btn">1</label>
+            <label for="radio2" class="manual-btn">2</label>
+            <label for="radio3" class="manual-btn">3</label>
+            <label for="radio4" class="manual-btn">4</label>
+
+            </div>
 </body>
+<script src="script_reso.js"></script>
 </html>

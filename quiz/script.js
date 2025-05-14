@@ -136,8 +136,5 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 })
-
-
-
 startQuiz();
 // https://www.todamateria.com.br/exercicios-de-porcentagem/
