@@ -82,6 +82,15 @@ body{
     justify-self: center;
     display: none;
 }
+#img5{
+    width: 600px;
+   height: 480px;
+   padding: 35px;
+   margin: 30px;
+   text-align: center;
+   justify-self: center;
+   display: none;
+}
 .manual-navigation {
     position: absolute;
     width: 97%; 
