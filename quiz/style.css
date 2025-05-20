@@ -274,3 +274,10 @@ body{
         transform: translateY(0px);
     }
 }
+
+/*#gokuindex{
+    text-align: right;
+    justify-self: right;
+    display: flex;
+    position: sticky;
+}*/

@@ -17,7 +17,11 @@ function showImage(imageId) {
   var images = document.getElementsByTagName('img');
 
   for (var i = 0; i < images.length; i++) {
-    images[i].style.display = 'none'; // Esconde todas as imagens
+    img1.style.display = 'none';
+    img2.style.display = 'none';
+    img3.style.display = 'none';
+    img4.style.display = 'none';
+    img5.style.display = 'none'; // Esconde todas as imagens exceto o goku
   }
 
   document.getElementById(imageId).style.display = 'block'; // Mostra a imagem desejada
